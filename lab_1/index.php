@@ -10,8 +10,10 @@
   <header><img src="/php/lab_1/img/images.png" alt="Лого МосПолитех">
   <h1>Домашняя работа: Hello, World!</h1></header>
   <main>
-  <?php echo 'Hello, World'; ?>
+  <?php 
+    echo '<h2>Hello, World</h2>';
+  ?>
   </main>
-  <footer><p>задание для самостоятельно работы</p></footer>
+  <footer><h2>задание для самостоятельно работы</h2></footer>
 </body>
 </html>
