@@ -12,6 +12,6 @@
   <main>
   <?php echo 'Hello, World'; ?>
   </main>
-  <footer></footer>
+  <footer><p>задание для самостоятельно работы</p></footer>
 </body>
 </html>
