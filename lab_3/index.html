@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Форма обратной связи</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <form action="https://httpbin.org/post" method="post">
+          <div>
+            <label for="name">Enter your name</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div>
+            <label for="female">Enter your female</label>
+            <input type="text" name="female" id="female">
+          </div>
+          <div>
+            <label for="email">Enter your email</label>
+            <input type="text" name="email" id="email">
+          </div>
+          <div>
+            <textarea name="desc" id="desc" cols="30" rows="10">
+              desc
+            </textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+        <a href="index.php">Переход на 2 страницу</a>
+      </div>
+    </main>
+
+  </body>
+</html>
