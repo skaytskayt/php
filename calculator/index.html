@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en, ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <input type="text" id="rezult" class="rezult">
+        <input type="button" onclick="alerted1()" value="1" name="one">
+        <input type="button" onclick="alerted2()" value="2" name="two">
+        <input type="button" onclick="alerted3()" value="3" name="three">
+        <input type="button" onclick="alerted4()" value="/" name="divide" />
+        <input type="button" onclick="alerted5()" value="4" name="four">
+        <input type="button" onclick="alerted6()" value="5" name="five">
+        <input type="button" onclick="alerted7()" value="6" name="six">
+        <input type="button" onclick="alerted8()" value="*" name="multiply" />
+        <input type="button" onclick="alerted9()" value="7" name="seven">
+        <input type="button" onclick="alerted10()" value="8" name="eight">
+        <input type="button" onclick="alerted11()" value="9" name="nine">
+        <input type="button" onclick="alerted12()" value="-" name="subtract" />
+        <input type="button" onclick="alerted13()" value="0" name="zero"
+          class="zero">
+        <input type="button" onclick="alerted14()" value="C" name="reset"
+          onclick="someFunc()">
+        <input type="button" onclick="alerted15()" value="+" name="add" />
+        <input type="button" value="=" name="equal" class="equal"
+          onclick="someFunc()">
+      </form>
+      <script>
+        let string = '';
+        function alerted1(){
+          string += '1';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted2(){
+          string += '2';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted3(){
+          string += '3';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted4(){
+          string += '/';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted5(){
+          string += '4';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted6(){
+          string += '5';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted7(){
+          string += '6';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted8(){
+          string += '*';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted9(){
+          string += '7';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted10(){
+          string += '8';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted11(){
+          string += '9';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted12(){
+          string += '-';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted13(){
+          string += '0';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted14(){
+          string = '';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted15(){
+          string += '+';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function someFunc(){
+          const inputElement = document.querySelector('#rezult');
+          if(string == ''){
+            inputElement.value = '';
+          }
+          else{
+            inputElement.value = eval(string);
+          }
+        }
+      </script>
+    </main>
+  </body>
+</html>
